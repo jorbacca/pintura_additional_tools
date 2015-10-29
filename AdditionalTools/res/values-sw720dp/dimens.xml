@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_top_title_preguntas">5dp</dimen> 
+    <dimen name="text_title_preguntas">60sp</dimen>
+    <dimen name="padding_top_enunciado_preguntas">30dp</dimen>
+    <dimen name="text_enunciado_preguntas">35sp</dimen>
+    <dimen name="text_opciones_preguntas">25sp</dimen>
+    <dimen name="padding_top_btn_guardar_resp">15dp</dimen>
+    <dimen name="padding_between_radios">25dp</dimen>
+</resources>

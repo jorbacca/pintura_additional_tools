@@ -1,0 +1,46 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/fondo_app">
+
+<TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/consulta_preguntas_title"
+       android:gravity="center"
+       android:layout_marginTop="25dp"
+       android:textSize="16sp"
+       android:textStyle="bold"
+       android:textColor="@color/white_title_over_blue"
+       />
+
+<FrameLayout
+       android:layout_marginTop="25dp"
+       android:layout_width="match_parent"
+       android:layout_height="0dip"
+       android:layout_weight="1">
+       <ListView
+              android:id="@android:id/list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:drawSelectorOnTop="false" 
+              android:cacheColorHint="#00000000"/>
+
+       <TextView
+              android:id="@android:id/empty"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="@string/consulta_preguntas_no_hay" 
+              android:textStyle="bold"
+       		  android:textColor="@color/white_title_over_blue"/>
+</FrameLayout>
+	<Button
+        android:id="@+id/btn_enviar_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_enviar_test_evaluacion"
+        android:onClick="EnviarEvaluacion" />
+</LinearLayout>

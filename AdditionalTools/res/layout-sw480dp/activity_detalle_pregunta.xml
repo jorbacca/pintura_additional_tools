@@ -1,0 +1,109 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="804dp"
+    android:background="@drawable/fondo_app"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.udg.bcds.pintura.arapp.DetallePregunta" >
+    
+    <TextView
+        android:id="@+id/numero_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_top_title_preguntas"
+        android:text="@string/texto_numero_pregunta"
+        android:textColor="@color/white_title_over_blue"
+        android:textSize="@dimen/text_title_preguntas"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/enunciado_preg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/numero_pregunta"
+        android:layout_marginTop="@dimen/padding_top_enunciado_preguntas"
+        android:text="@string/title_activity_detalle_pregunta"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_over_white_question"
+        android:textSize="@dimen/text_enunciado_preguntas" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPreguntas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_ver_img"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio_opciona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/optiona_value"
+            android:textColor="@color/black_over_white_question"
+            android:textSize="@dimen/text_opciones_preguntas" />
+
+        <RadioButton
+            android:id="@+id/radio_opcionb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/optionb_value"
+            android:textColor="@color/black_over_white_question"
+            android:textSize="@dimen/text_opciones_preguntas" 
+            android:layout_marginTop="@dimen/padding_between_radios"/>
+
+        <RadioButton
+            android:id="@+id/radio_opcionc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/optionc_value"
+            android:textColor="@color/black_over_white_question"
+            android:textSize="@dimen/text_opciones_preguntas" 
+            android:layout_marginTop="@dimen/padding_between_radios"/>
+
+        <RadioButton
+            android:id="@+id/radio_opciond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="@string/optiond_value"
+            android:textColor="@color/black_over_white_question"
+            android:textSize="@dimen/text_opciones_preguntas" 
+            android:layout_marginTop="@dimen/padding_between_radios"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_guardar_resp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupPreguntas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_top_btn_guardar_resp"
+        android:text="@string/btn_text_guardar_respuesta"
+        android:onClick="GuardarRespuesta" />
+
+    <Button
+        android:id="@+id/btn_ver_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enunciado_preg"
+        android:layout_alignRight="@+id/radioGroupPreguntas"
+        android:text="@string/btn_text_ver_imagen" 
+        android:onClick="VerImgenAction"/>
+
+</RelativeLayout>
+</ScrollView>
